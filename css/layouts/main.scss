@@ -1,0 +1,135 @@
+// div {
+// 	background-color: pink;
+// }
+
+@mixin v-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h3 {
+	font-size: 2em;
+}
+
+.slide {
+	background-size: cover;
+}
+
+.top {
+	.fp-tableCell {
+		vertical-align: initial;
+		background-size: cover;
+	}
+}
+
+.middle {
+	.fp-tableCell {
+		vertical-align: middle;
+	}
+}
+
+.bottom {
+	.fp-tableCell {
+
+	}
+}
+
+
+.copy {
+	background-color: white;
+	opacity: .9;
+	position: relative;
+	padding: 20px;
+}
+
+.dark {
+	.copy {
+		background-color: transparent;
+		color: white;
+	}
+}
+
+.flag {
+	// width: 50%;
+	@include span-columns(4);
+	@include shift(7);
+	// float: right;
+	height: 350px;
+	margin-top: 0;
+}
+
+.left-flag {
+	@include span-columns(4);
+	@include shift(1);
+}
+
+.mid-flag {
+	.fp-tableCell { 
+		vertical-align: middle;
+	}
+	// margin-top: auto;
+}
+
+.split {
+	@include span-columns(6);
+	height: 100%;
+	.copy {
+		opacity: 1;
+	}
+}
+
+
+.banner {
+	// @include v-align;
+	@include span-columns(6);
+	@include shift(3); 
+	// margin: auto;
+	text-align: center;	
+	margin-top: 0;
+}
+
+
+.banner-copy {
+	height: 40%;
+	margin: auto;
+}
+
+#one {
+
+	background: $red url("../img/Jumping.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+#two-image {
+	background: $red url("../img/OverAndOver.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+#three {
+	background: $red url("../img/Unbound.jpg") no-repeat right top;
+	background-size: cover;
+
+}
+
+#four-image {
+	background: $red url("../img/SomeDaysAnything.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+#five {
+	background: $red url("../img/ComingSoon.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+#six {
+	background: $red url("../img/CultureTrail.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+#seven {
+	background: $red url("../img/Unbound.jpg") no-repeat right top;
+	background-size: cover;
+}
